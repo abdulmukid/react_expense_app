@@ -1,18 +1,12 @@
+import ExpenseDate from './ExpenseDate';
 import './ExpenseModule.css';
-// de-structor the incoming props paramter here to make the values more clear
+
+// destructor the incoming props paramter here to make the values more clear
+// destructered value names Must match what they are being passed in as
 function ExpenseModule({date, title, amount}) {
-
-  const month = date.toLocaleString('en-US', {month: 'long'});
-  const day = date.toLocaleString('en-US', { day: '2-digit'});
-  const year = date.getFullYear();
-
   return (
     <div className='expense-item'>
-      <div>
-        <div>{month}</div>
-        <div>{year}</div>
-        <div>{day}</div>
-      </div>
+      <ExpenseDate expenseDate={date}/>
       <div className='expense-item__description'>
         <h2>{title}</h2>
         <div className='expense-item__price'>{amount}</div>
