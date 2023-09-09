@@ -1,6 +1,6 @@
-//the term card typically means you are giving a container like look to your child components
-import "./ExpenseCard.css";
+import "../../styling/ui/ExpenseCard.css";
 
+//the term card typically means you are giving a container like look to your child components
 function ExpenseCard(props) {
   //we have to define what stylings our custom component can take for them to have an effect
   //props.classname makes sure that anything we recieve as a classname is added to the styling

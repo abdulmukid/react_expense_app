@@ -1,6 +1,6 @@
-import ExpenseCard from "./ExpenseCard";
+import ExpenseCard from "../ui/ExpenseCard";
 import ExpenseDate from "./ExpenseDate";
-import "./ExpenseModule.css";
+import "../../styling/expenses/ExpenseModule.css";
 
 // destructor the incoming props paramter here to make the values more clear
 // destructered value names Must match what they are being passed in as

@@ -1,5 +1,4 @@
-import ExpenseModule from "./components/ExpenseModule";
-import Expenses from "./components/Expenses";
+import Expenses from "./components/expenses/Expenses";
 
 const expenses = [
   { id: "e1", title: "New TV", amount: 1000.0, date: new Date(2023, 2, 12) },
