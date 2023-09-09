@@ -4,7 +4,7 @@ import "../../styling/expenses/ExpenseModule.css";
 
 // destructor the incoming props paramter here to make the values more clear
 // destructered value names Must match what they are being passed in as
-function ExpenseModule({ date, title, amount }) {
+const ExpenseModule = ({ date, title, amount }) => {
   return (
     <ExpenseCard className="expense-item">
       <ExpenseDate expenseDate={date} />

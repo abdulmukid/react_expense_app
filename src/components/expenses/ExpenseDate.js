@@ -1,6 +1,6 @@
 import "../../styling/expenses/ExpenseDate.css";
 
-function ExpenseDate({ expenseDate }) {
+const ExpenseDate = ({ expenseDate }) => {
   const month = expenseDate.toLocaleString("en-US", { month: "long" });
   const day = expenseDate.toLocaleString("en-US", { day: "2-digit" });
   const year = expenseDate.getFullYear();

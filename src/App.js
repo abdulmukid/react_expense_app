@@ -7,7 +7,7 @@ const expenses = [
   { id: "e4", title: "Junk Food", amount: 30.0, date: new Date(2023, 7, 7) },
 ];
 
-function App() {
+const App = () => {
   return (
     <div>
       <h2>Let's get started!</h2>

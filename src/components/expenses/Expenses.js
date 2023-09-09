@@ -2,7 +2,7 @@ import "../../styling/expenses/Expenses.css";
 import ExpenseModule from "./ExpenseModule";
 import ExpenseCard from "../ui/ExpenseCard";
 
-function Expenses({ items }) {
+const Expenses = ({ items }) => {
   return (
     <ExpenseCard className="expenses">
       <ExpenseModule
