@@ -2,7 +2,7 @@ import { useState } from "react";
 import "../../styling/newExpense/ExpenseForm.css";
 
 //onChange is a listener that will look out for all input types
-const ExpenseForm = () => {
+const ExpenseForm = (props) => {
   //Instead of having 3 seperate useState hooks, we can group them into one by passing in an object to useState that will hold
   //individual keys
   const [userInput, enteredUserInput] = useState({
@@ -37,7 +37,8 @@ const ExpenseForm = () => {
   const submitHandler = (event) => {
     //the default is the reload the page once the button is pressed for the form, we dont want that
     event.preventDefault();
-    console.log(userInput)
+    //here we are triggering the listner function that hass been passed in through props to send the data back up
+    props.onSubmittedExpenseItem(userInput)
     enteredUserInput((prevState) => {return {...prevState, enteredTitle: ''}})
     enteredUserInput((prevState) => {return {...prevState, enteredAmount: ''}})
     enteredUserInput((prevState) => {return {...prevState, enteredDate: ''}})

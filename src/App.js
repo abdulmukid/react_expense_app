@@ -9,12 +9,17 @@ const expenses = [
 ];
 
 const App = () => {
+  const addExpenseHandler = (newExpenseData) => {
+    console.log("In App.js");
+    console.log(newExpenseData);
+  };
+
   return (
     <div>
-      <NewExpense/>
+      <NewExpense onAddExpense={addExpenseHandler} />
       <Expenses items={expenses} />
     </div>
   );
-}
+};
 
 export default App;
