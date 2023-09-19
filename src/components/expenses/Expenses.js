@@ -20,6 +20,7 @@ const Expenses = ({ items }) => {
         {/* the map function dynamcialy goes through the list and applies a function to the result */}
         {items.map((expense) => (
           <ExpenseModule
+            key={expense.id}
             title={expense.title}
             amount={expense.amount}
             date={expense.date}
